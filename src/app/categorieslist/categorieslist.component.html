@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Categories List</h2>
+    <ol>
+        <li *ngFor="let item of Categories">
+            <button (click)="CategoriesClick(item)" class="btn btn-link">
+                {{item.CategoryName}}
+            </button>
+            
+        </li>
+    </ol>
+</div>
